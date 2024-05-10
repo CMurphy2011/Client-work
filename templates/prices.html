@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block h1 %}
+{#    <div id="typewriter-container">#}
+{#        <div class="typewriter">#}
+{#            <span id="ancestor">My ancestor was a... </span><span id="typewriter-text"></span>#}
+{#        </div>#}
+{#         <script src="{{ url_for('static', filename='typewriter.js') }}" style="color:#1cb61c!important;"></script>#}
+{#    </div>#}
+{#{% endblock %}#}
+{##}
+{#{% block p %}#}
+    <div class="home-boxes">
+        <div class="box" id="price-video-box">
+            <div class="box-heading">
+                Price Breakdown
+            </div>
+            <div class="box-video">
+                <iframe  src="https://www.youtube.com/embed/l-aV3qt6dKw?si=kMWqDCqFAFf71ayb"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="video-embed">
+                </iframe>
+            </div>
+        </div>
+        <div class="small-boxes">
+            <div class="box" id="price-box1">
+                <div class="box-heading">
+                    Client website text: £250
+                </div>
+                <div class="box-text">
+                    Client website text
+                </div>
+            </div>
+            <div class="box" id="price-box2">
+                <div class="box-heading">
+                    Client website text: £475
+                </div>
+                <div class="box-text">
+                    Client website text
+                </div>
+            </div>
+        </div>
+        <div class="small-boxes">
+            <div class="box" id="price-box3">
+                <div class="box-heading">
+                    Client website text: £20 per hour
+                </div>
+                <div class="box-text">
+                    Client website text
+                </div>
+            </div>
+            <div class="box" id="price-box4">
+                <div class="box-heading">
+                    Client website text: £900
+                </div>
+                <div class="box-text">
+                    Client website text
+                </div>
+            </div>
+            <div class="box" id="price-box5">
+                <div class="box-heading">
+                    Client website text
+                </div>
+                <div class="box-text">
+                    Client website text
+            </div>
+        </div>
+        <div class="box" id="price-box-big">
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb1">
+                        <label for="cb1" class="tab__label" style="">Additional Information</label>
+                        <div class="tab__content">
+                            <p>
+                                Client website text
+                            </p>
+                        </div>
+                    </div>
+            </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Client Website Title</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Client Website Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="navbar-class">
+            <div class="container-fluid" id="navbar-container">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ url_for('static', filename='logotransparentcrop.png') }}" alt="Client Website Title" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="navbar-actual">
+                        <a class="nav-link" href="/" {% if request.path == '/' %}style="color: #00de00"{% endif %}
+                           {% if request.path == '/homenew' %}style="color: #00de00"{% endif %}>Home</a>
+{#                        <a class="nav-link" href="/about" {% if request.path == '/about' %}style="color: #00de00"{% endif %}>About</a>#}
+                        <a class="nav-link" href="/faqs" {% if request.path == '/faqs' %}style="color: #00de00"{% endif %}>FAQs</a>
+                        <a class="nav-link" href="/prices" {% if request.path == '/prices' %}style="color: #00de00"{% endif %}>Prices</a>
+{#                        <a class="nav-link" href="/research" {% if request.path == '/research' %}style="color: #00de00"{% endif %}>Example Research</a>#}
+{#                        <a class="nav-link" href="/smallprint" {% if request.path == '/smallprint' %}style="color: #00de00"{% endif %}>Small Print</a>#}
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div id="container">
+                <h1>
+                    <div id="typewriter-container">
+                        <div class="typewriter">
+                            <span id="ancestor">My ancestor was a... </span><span id="typewriter-text"></span>
+                        </div>
+                        <script src="{{ url_for('static', filename='typewriter.js') }}" style="color:#1cb61c!important;"></script>
+                    </div>
+                    {% block h1 %} {% endblock %}
+                </h1>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="terms">
+            <a href="/smallprint">Terms of Use</a>
+        </div>
+        <div id="copyright">
+            2023 Client Website Title©
+        </div>
+    </footer>
+</body>
+</html>

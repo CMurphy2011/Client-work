@@ -1,0 +1,325 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
+
+@import "fonts.css";
+@import "mobile-med.css";
+@import "accordion.css";
+
+/*@import "mobile-med.css";*/
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    letter-spacing: -.5px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    padding-left: 37px;
+    padding-right: 100px;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text color */
+    text-align: left;
+}
+
+a {
+    color: #000000;
+    transition: 0.3s;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text color */
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+h2 {
+    /*font-size: 1.2em;*/
+    font-weight: bold;
+    display: inline;
+}
+
+p {
+    font-weight: normal;
+    font-size: 1.3em;
+
+}
+
+
+
+.home-boxes {
+    padding-top: 20px;
+    /*background-color: lightgray;*/
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    /*border: 4px solid rgba(0, 134, 21, 0.37);*/
+    border: 2.5px solid rgba(33, 33, 33, 0.14);
+    background: #ffffff;
+    color: #000000;
+    height: auto;
+    /*width: 50vw;*/
+    margin: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /*padding: 10px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.small-boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+#box1 {
+    width: auto;
+}
+
+#box2 {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    width: 50%;
+}
+
+#box3 {
+    width: 50%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 15px;
+}
+
+#price-box1 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#price-box2 {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#price-box3 {
+    width: 33.3%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+}
+
+#price-box4 {
+    width: 33.3%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#price-box5 {
+    width: 33.3%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 15px;
+}
+
+#price-video-box {
+    margin-left: 25%;
+    width: 50%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#price-box-big {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.box-video {
+    padding-top: 10px;
+    text-align: center;
+    zoom: 200%;
+}
+
+/*#video-embed {*/
+/*    padding-top: 10px;*/
+/*    text-align: center;*/
+/*    zoom: 200%;*/
+/*}*/
+
+.box-heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3vh;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+    /*padding-bottom: 2px;*/
+}
+
+.box-text {
+    font-weight: 45;
+    font-size: 2.4vh;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.box-text > a {
+    transition: 0.3s;
+}
+
+.box-text > a:hover {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+p >a:hover {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.faq-boxes {
+    padding-top: 20px;
+    /*background-color: lightgray;*/
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-box {
+    /*border: 4px solid rgba(0, 134, 21, 0.37);*/
+    border: 2.5px solid rgba(33, 33, 33, 0.14);
+    background: #ffffff;
+    color: #000000;
+    height: auto;
+    /*width: 50vw;*/
+    margin: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+}
+
+.faq-box-text {
+    padding: 20px;
+}
+
+
+
+.freeindex {
+    height: 20px !important;
+}
+
+.box-price-container {
+    display: flex;
+    justify-content: center;
+}
+
+.price-box {
+    text-align: center;
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.price-number {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    font-weight: bold;
+    font-size: 140%;
+}
+
+#per-hour {
+    font-size: 60%;
+}
+
+.price-title {
+
+}
+
+
+#typewriter-container {
+    position: relative;
+    text-align: center;
+    height: 25vh;
+    width: 100%;
+    justify-content: center;
+    background: lightgray url("photos/Liverpool1890s.jpg");
+    background-position-x: 0%;
+    background-position-y: 30%;
+    background-size: 100%;
+
+}
+
+.typewriter {
+    text-align: center;
+    padding: 7.5vh;
+    font-size: 4.2vw;
+    color: #ffffff;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+}
+
+/* Add a blinking cursor animation */
+.typewriter::after {
+    content: '|';
+    animation: blink-caret 1s infinite;
+}
+
+@keyframes blink-caret {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+#typewriter-text{
+    color: #00cc00;
+}
+
+.nav-link{
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.nav-link:active{
+    background-color: #008000;
+    color: #ffffff;
+}
+
+#navbarNavAltMarkup {
+    text-align: center;
+}
+
+
+footer {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    /*text-align: right;*/
+    zoom: 70%;
+    padding-left: 30px;
+}
+
+#copyright {
+    padding-left: 20px;
+}
+
+#terms {
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#terms > a:hover{
+    background-color: #008000;
+    color: #ffffff !important;
+}
+

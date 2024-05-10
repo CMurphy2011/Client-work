@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block h1 %}
+    <div id="typewriter-container">
+        <div class="typewriter">
+            <span id="ancestor">My ancestor was a... </span><span id="typewriter-text"></span>
+        </div>
+         <script src="{{ url_for('static', filename='typewriter.js') }}" style="color:#1cb61c!important;"></script>
+    </div>
+{#{% endblock %}#}
+{##}
+{#{% block p %}#}
+    <div class="home-boxes">
+        <div class="box" id="box1">
+            <div class="box-heading">
+                Client website text
+            </div>
+            <div class="box-text">
+                Client website text
+            </div>
+        </div>
+        <div class="small-boxes">
+            <div class="box" id="box2">
+                <div class="box-heading">
+                    Client website text
+                </div>
+                <div class="box-text">
+                    Client website text
+                </div>
+            </div>
+            <div class="box" id="box3">
+                <div class="box-heading">
+                    Client website text
+                </div>
+                <div class="box-text">
+                    Client website text
+                    <a href="/prices">Prices</a> page.
+                    <div class="box-price-container">
+                        <div class="price-box">
+                            <div class="price-number">
+                                £20<div id="per-hour">p/h</div>
+                            </div>
+                            <div class="price-title">
+                                Client website text
+                            </div>
+                        </div>
+                        <div class="price-box">
+                            <div class="price-number">
+                                £250
+                            </div>
+                            <div class="price-title">
+                                Client website text
+                            </div>
+                        </div>
+                        <div class="price-box">
+                            <div class="price-number">
+                                £475
+                            </div>
+                            <div class="price-title">
+                                Client website text
+                            </div>
+                        </div>
+                        <div class="price-box">
+                            <div class="price-number">
+                                £900
+                            </div>
+                            <div class="price-title">
+                                Client website text
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
